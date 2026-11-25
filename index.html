@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>VIDABANDIDA Command Center</title>
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#0b0b0c">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="VB Command">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" type="image/png" href="icons/icon-192.png">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+  <main id="view" tabindex="-1"></main>
+
+  <nav class="tabbar" aria-label="Secciones">
+    <a href="#/home" data-tab="home"><span class="tab-n">01</span>HOME</a>
+    <a href="#/plan" data-tab="plan"><span class="tab-n">02</span>30 DÍAS</a>
+    <a href="#/bank" data-tab="bank"><span class="tab-n">03</span>BANK</a>
+    <a href="#/stats" data-tab="stats"><span class="tab-n">04</span>MÉTRICAS</a>
+  </nav>
+
+  <div id="toast" role="status" aria-live="polite"></div>
+
+  <dialog id="sheet"></dialog>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
